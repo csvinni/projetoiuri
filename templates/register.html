@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<h1>Cadastro</h1>
+    <form class="form" action="{{ url_for('register') }}" method="POST">
+        <input class="input" type="email" placeholder="Email" name="email">
+        <input class="input" type="text" placeholder="Nome" name="nome">
+        <input class="input" type="password" placeholder="Senha" name="senha">
+        <button class="button">Enviar</button>
+    </form>
+</div>
+{% endblock %}
